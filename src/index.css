@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.link-115 {
+    color: #E2670E; /* Or #ffffff if bg is dark */
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 8px;
+    margin: 0 5px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .link-115::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #F1C40F, #E74C3C);
+    border-radius: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .link-115:hover::before {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
